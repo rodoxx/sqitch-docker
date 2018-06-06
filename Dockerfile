@@ -20,6 +20,8 @@ RUN apt-get update && \
 	sqlite3 && \
 	apt-get clean
 
+RUN apt-get install -y libdbd-mysql-perl
+
 # Install sqitch & deps
 RUN PERL_MM_USE_DEFAULT=1 cpan App::Sqitch
 RUN PERL_MM_USE_DEFAULT=1 cpan DBD::SQLite
