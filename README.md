@@ -15,7 +15,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';
 ```
 $ sqitch init test --uri https://github.com/rodoxx/sqitch.git --engine mysql
 $ sqitch config --user user.name 'Name'
-$ sqitch config --user user.email 'usernmae@domain.com'
+$ sqitch config --user user.email 'username@domain.com'
 $ sqitch config --user engine.mysql.client /usr/bin/mysql
 $ sqitch target add localhost db:mysql://root@localhost/databasename
 ```
